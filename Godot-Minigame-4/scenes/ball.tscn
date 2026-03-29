@@ -18,6 +18,7 @@ collision_layer = 4
 collision_mask = 15
 physics_material_override = SubResource("PhysicsMaterial_7s4qf")
 script = ExtResource("1_7s4qf")
+hold_position = Vector3(1, 0.5, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_3vyb7")

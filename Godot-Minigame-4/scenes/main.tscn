@@ -25,8 +25,10 @@ transform = Transform3D(1, 0, 0, 0, 0.83821404, 0.5453415, 0, -0.5453415, 0.8382
 transform = Transform3D(1, 0, 0, 0, 0.3097971, 0.9508027, 0, -0.9508027, 0.3097971, 0, 2.806101, 0)
 
 [node name="NPC" parent="." instance=ExtResource("3_sugp2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.994069, 1.5117404, -4.794055)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.2559915, 1.5117404, -4.794055)
 throwPower = 10.0
+speed = 4.0
+maxDistance = 4.0
 throwFrequency = 1.0
 
 [node name="UI" type="BoxContainer" parent="."]
@@ -46,12 +48,34 @@ label_settings = SubResource("LabelSettings_jyhfs")
 
 [node name="Ball" parent="." instance=ExtResource("4_jyhfs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.032008, 0.75, 5.703159)
-hold_position = Vector3(1, 0.5, 0)
 
 [node name="Ball2" parent="." instance=ExtResource("4_jyhfs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8009377, 0.75, 5.9645324)
-hold_position = Vector3(1, 0.5, 0)
 
 [node name="Ball3" parent="." instance=ExtResource("4_jyhfs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5218492, 0.75, 7.0957203)
-hold_position = Vector3(1, 0.5, 0)
+
+[node name="NPC2" parent="." instance=ExtResource("3_sugp2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.3092527, 1.5117404, -8.122867)
+throwPower = 15.0
+speed = 5.0
+maxDistance = 7.0
+
+[node name="NPC3" parent="." instance=ExtResource("3_sugp2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.1216497, 1.5117404, -2.358804)
+throwPower = 20.0
+speed = 3.0
+maxDistance = 6.0
+throwFrequency = 2.0
+
+[node name="Ball4" parent="." instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.2018957, 0.75, 8.042062)
+
+[node name="Ball5" parent="." instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.774743, 0.75, 3.65198)
+
+[node name="Ball6" parent="." instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1836936, 0.75, 8.767744)
+
+[node name="Ball7" parent="." instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.2367175, 0.75, 3.7223763)
