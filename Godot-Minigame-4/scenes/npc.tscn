@@ -14,7 +14,6 @@ albedo_color = Color(0.8914083, 0.3474434, 0.29302835, 1)
 collision_layer = 8
 collision_mask = 15
 script = ExtResource("1_nh2m4")
-throwFrequency = 2.0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("CapsuleMesh_0wfyh")
@@ -24,6 +23,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_0wfyh")
 shape = SubResource("CapsuleShape3D_sugp2")
 
 [node name="Ball" parent="." instance=ExtResource("2_abqhh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.933092, 0, 1.2410469)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.98333883, 0, 1.2410469)
+hold_position = Vector3(1, 0.5, 0)
 
 [connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
